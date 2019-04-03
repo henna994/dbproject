@@ -48,34 +48,34 @@
     <h3 style="text-align: center; font-weight: bold;">Flights</h3>
     <div class="row">
         <form class="form-horizontal" action="flights.php" method="POST">
-        <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Flights from</label>
-            <div class="col-lg-8">
+        <div class="form-group mb-3">
+                 <label class="control-label">Flights from</label>
+            <div>
                  <input type="text" name="from_date" id="from" class="form-control">
             </div> 
             </div>
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Flights to</label>
-            <div class="col-lg-8">
+            <div class="form-group mb-3">
+                 <label class="control-label">Flights to</label>
+            <div>
                  <input type="text" name="to_date" id="to" class="form-control">
             </div> 
             </div>
            
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Source</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="source" placeholder="name">
+            <div class="form-group mb-3">
+                 <label class="control-label">Source</label>
+            <div>
+                 <input type="text" class="form-control" name="source" placeholder="source">
+            </div>
+            </div> 
+            <div class="form-group mb-3">
+                 <label class="control-label">Destination</label>
+            <div>
+                 <input type="text" class="form-control" name="destination" placeholder="destination">
             </div>
             </div> 
             <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Destination</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="destination" placeholder="name">
-            </div>
-            </div> 
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label"></label>
-            <div class="col-lg-8">
+                 <label class="control-label"></label>
+            <div>
                  <input type="submit" name="submit" class="btn btn-primary">
             </div> 
             </div>

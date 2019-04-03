@@ -48,9 +48,9 @@
     <div class="row">
         <form class="form-horizontal" action="tickets.php" method="POST">
 
-        <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Class</label>
-            <div class="col-lg-8">
+        <div class="form-group mb-3">
+                 <label class="control-label">Class</label>
+            <div>
                  <select name="class" class="course form-control">
                     <option>Select</option>
                     <option value="first">First</option>
@@ -60,9 +60,9 @@
                     </select>
                 </div>
             </div>  
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Seat</label>
-            <div class="col-lg-8">
+            <div class="form-group mb-3">
+                 <label class="control-label">Seat</label>
+            <div>
                  <select name="seat" class="course form-control">
                     <option>Select</option>
                     <option value="a">a</option>
@@ -79,16 +79,16 @@
                     </select>
                 </div>
             </div>  
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Seat row</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="seatn" placeholder="name">
+            <div class="form-group mb-3">
+                 <label class="control-label">Seat row</label>
+            <div>
+                 <input type="text" class="form-control" name="seatn" placeholder="Row">
             </div>
             </div> 
        
             <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label"></label>
-            <div class="col-lg-8">
+                 <label class="control-label"></label>
+            <div>
                  <input type="submit" name="submit" class="btn btn-primary">
             </div> 
             </div>

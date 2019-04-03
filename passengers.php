@@ -48,22 +48,25 @@
     <div class="row">
         <form class="form-horizontal" action="passengers.php" method="POST">
 
-        <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">ID</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="id" placeholder="name">
+        <div class="form-group mb-3">
+                 <label class="control-label">ID</label>
+            <div>
+                 <input type="text" class="form-control" name="id" placeholder="ID">
             </div>
             </div> 
+            <div class="form-group mb-3">
+                 <label class="control-label">Adult/Child</label>
+            <div class="form-inline">
+                 <select name="ac" class="course form-control">
+                    <option>Select</option>
+                    <option value="adult">Adult</option>
+                    <option value="child">child</option>
+                    </select>
+                </div>
+            </div>  
             <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Adult/Child</label>
-            <div class="col-lg-8">
-                 <input type="radio" name="ac" value="adult">Adult
-                 <input type="radio" name="ac" value="child">Child
-                 </div>
-             </div>
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label"></label>
-            <div class="col-lg-8">
+                 <label class="control-label"></label>
+            <div>
                  <input type="submit" name="submit" class="btn btn-primary">
             </div> 
             </div>
@@ -130,11 +133,9 @@
                         $id = $_POST['id'];
                         $ac = $_POST['ac'];
 
-                       
-
                         if($id != "" || $ac != ""){
-                           $query = "SELECT * FROM passenger WHERE id = '$id' OR ac = '$ac'";
-                            
+                          $query = "SELECT * FROM passenger WHERE id = '$id' OR ac = '$ac'";
+                           
                            $data = mysqli_query($conn, $query) or die('error');
                         if(mysqli_num_rows($data) > 0){
                             while($row = mysqli_fetch_assoc($data)){
@@ -143,22 +144,22 @@
                                 $last = $row['last'];
                                 $ac = $row['ac'];
                                 $cell = $row['cell'];
-                               
+                                                             
                                 ?>
                                 <tr>
-                                <td><?php echo $id;?></td>
+                                    <td><?php echo $id;?></td>
                                     <td><?php echo $first;?></td>
                                     <td><?php echo $last;?></td>
                                     <td><?php echo $ac;?></td>
                                     <td><?php echo $cell;?></td>
-                                   
+                                                                    
                                 </tr>
                                 <?php
 
-                            }
+                            
                         }
 
-                       
+                      }
                         
                         }
                     }

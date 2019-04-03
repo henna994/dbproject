@@ -1,0 +1,10 @@
+.container h1 {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    transform: translateY(300%);
+}
+
+input[type="radio"] {
+    margin-left: -3px;
+  }

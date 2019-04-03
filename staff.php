@@ -48,15 +48,15 @@
     <div class="row">
         <form class="form-horizontal" action="staff.php" method="POST">
 
-        <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">ID</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="id" placeholder="name">
+        <div class="form-group mb-3">
+                 <label class="control-label">ID</label>
+            <div>
+                 <input type="text" class="form-control" name="id" placeholder="ID">
             </div>
             </div> 
-        <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">Job</label>
-            <div class="col-lg-8">
+        <div class="form-group mb-3">
+                 <label class="control-label">Job</label>
+            <div>
                  <select name="job" class="course form-control">
                     <option>Select</option>
                     <option value="pilot">Pilot</option>
@@ -72,8 +72,8 @@
             </div>  
        
             <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label"></label>
-            <div class="col-lg-8">
+                 <label class="control-label"></label>
+            <div>
                  <input type="submit" name="submit" class="btn btn-primary">
             </div> 
             </div>

@@ -47,21 +47,21 @@
     <h3 style="text-align: center; font-weight: bold;">Airport</h3>
     <div class="row">
         <form class="form-horizontal" action="airport.php" method="POST">
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">City</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="location" placeholder="name">
+            <div class="form-group mb-3">
+                 <label class="control-label">City</label>
+            <div>
+                 <input type="text" class="form-control" name="location" placeholder="city">
+            </div>
+            </div> 
+            <div class="form-group mb-3">
+                 <label class="control-label">IATA</label>
+            <div>
+                 <input type="text" class="form-control" name="iata" placeholder="IATA">
             </div>
             </div> 
             <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label">IATA</label>
-            <div class="col-lg-8">
-                 <input type="text" class="form-control" name="iata" placeholder="name">
-            </div>
-            </div> 
-            <div class="input-group mb-3">
-                 <label class="col-lg-2 control-label"></label>
-            <div class="col-lg-8">
+                 <label class="control-label"></label>
+            <div>
                  <input type="submit" name="submit" class="btn btn-primary">
             </div> 
             </div>
